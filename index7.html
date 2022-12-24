@@ -1,0 +1,90 @@
+<<!--Contact
+paperform code found here: 
+https://paperform.co/blog/html-contact-form/
+
+Bugs:
+-footer margins/alignments are off
+- error message after submit button is selected. Is this bc we are running via live the server?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Amber's online portfolio</title>
+        <link rel="stylesheet" href="main.css">
+      
+        <!-- Add icon library -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add font library -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <style>
+            body {
+                font-family: "Montserrat", sans-serif;
+            }
+        </style>
+      </head>
+      <header>
+
+    <div class="title">AMBER HALL</p></div>
+
+    <div class="navsContainer">
+     <ul><a href="index.html"><span class="bolded">WORK</span></a></ul>
+     <ul><a href="index2.html"> Concrete Constellations</a></ul>
+     <ul><a href="index3.html"> Digital Disarray</a></ul>
+     <ul><a href="index4.html"> Emotions In Algorithm</a></ul>
+     <ul><a href="index5.html"> Living Scroll</a></ul> 
+     <ul><a href="index6.html"><span class="bolded">ABOUT</span></a></ul>
+     <ul><a href="index7.html"><span class="bolded">CONTACT</span></a></ul>
+    </div>
+      
+         <!-- target="_blank anchor tag used to open links in new tab -->
+            <div class="socsContainer">
+              <a href="https://www.linkedin.com/in/amberhall02/" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+              <a href="https://www.instagram.com/amberhallart/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://vimeo.com/user154131132" target="_blank"><i  class="fa fa-vimeo-square"></i></a>
+             </div>
+      </header>
+    <body> 
+
+          <div class="fformContainer">
+            <div class="contactHeading"><h2> CONTACT</h2></div>
+            <div class="contactSubheading"><h4>For inquiries, please  fill out the form below.</h4></div>
+            </div>
+
+            <div class="formContainer">
+             <!-- On submit, send the form-data to a file named "action_page.php"  -->
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                <label for="Name" class="fcf-label">Your Name*</label>
+                 <div class="fcf-input-group">
+                        <input type="text" id="name" name="Name" placeholder="Your Name.." class="fcf-form-control" required>
+                    </div>
+
+                  <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your Email Address*</label>
+                    <div class="fcf-input-group">
+                    <input type="text" id="email" name="Email Address" placeholder="Your Email Address.." class="fcf-form-control" required>
+                </div>
+
+               <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your Message*</label>
+                  <div class="fcf-input-group">
+              <textarea id="message" name="Message" placeholder="Your Message.." rows="6" style="height:500px"  maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+      <div class="fcf-form-group">
+              <input type="submit" value="Submit">
+              <!-- <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg ">Submit</button> -->
+            </form>
+          </div>
+
+    </body>
+    <footer>
+        <div class="footer1">Made by Amber Hall © 2022</div></footer>
+    </footer>
+
+   
+ 

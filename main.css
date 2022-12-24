@@ -1,0 +1,346 @@
+/* Draft CSS 
+
+So far this is only written for desktop. 
+
+Changes to make/Tests to do:
+-make a responsive web design with CSS sets for all devices 
+-fix footer margins/alignment so its bottom center on every page no matter the length
+-allow images in carousels to be selected and viewed individually as a hover image:
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+*/
+
+.title{ /*Amber logo*/
+    
+    width:1019px;
+    height: 350px;
+
+    margin-left:1050px;
+    margin-right: 0px;
+    margin-top: 150px;
+    padding: 0px;
+    
+    background: white;
+    font-size: 150px;
+    color: purple;
+   
+}
+
+.footer1{ /*footer*/
+  font-size: 40px;  
+  font-display: center;
+  text-align: center;
+  color: rgba(111, 73, 111, 0.739);/*alpha changed for lighter purple*/
+  margin-top:1700px;
+  margin-bottom: 0px;
+}
+ 
+/* ---------NAVIGATION------------ */
+/*navigation bar*/
+.navsContainer{
+    width: 710px;
+    height:870px;
+
+    margin-top: 0px;
+    margin-left:1000px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+    background: white;
+    font-size: 56px;
+ 
+}
+
+.bolded { 
+    font-weight:bolder;  
+    font-size: 56px; /*change to 70px when making subheadings into center alignment*/
+    font-display: center;
+    text-align:center;
+    color: rgb(102, 3, 102); /*darker purple to seem bolder*/
+}
+
+
+:link{ 
+    text-decoration:none; /* remove underline on ANY hyperlinks */
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(128, 0, 128, 0.739);/*alpha changed for lighter purple*/
+}
+/* ---------SOCIALS------------ */
+
+/* Social Media Container*/
+.socsContainer {
+    font-size: 78px;
+    overflow: auto;/*overflow due to floats*/
+    float: left; /*float icons side by side*/
+    margin-top: 0px;
+    margin-left:1050px;
+    margin-right:0px;
+    margin-bottom: 0px;;
+    width: 5%;
+    text-decoration: none;
+    color: purple;
+  }
+
+  .fa-linkedin-square {    /* Linkedin */
+    background: white;
+    color: purple;
+  }
+  
+  .fa-instagram {   /* Instagram */
+    background: white;
+
+    text-align: left;
+  }
+  
+  .fa-vimeo-square {   /* Vimeo Square */
+    background: white;
+    color: purple;
+    text-align: right;
+  }
+
+ 
+
+/* ---------HOME PHOTO GRID------------ */
+.picsContainer{
+ width:5000px;
+ height:2000px;
+ margin-left:2500px;
+ margin-top:-1200px;
+ margin-bottom: -300px;;
+}
+
+.picsContainer >div> img{
+    float:left;
+    border:none;
+    width:40%;
+    height:40%;
+    margin:30px;/*space in between images*/
+}
+
+
+/* .picContainerimage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .picsContainer:hover .image {
+    opacity: 0.6;
+  }
+  
+  .picsContainer:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: lightgray;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
+
+
+
+
+/* ---------WORK PHOTO GRID------------ */
+.workContainer{
+    width:50%;
+    height:80%;
+    margin-top:-1200px;
+    margin-left:2500px;
+    margin-bottom: 0px;
+    background: white;
+    font-display: center;
+    text-align:center;
+}
+
+.workContainer >div >video{
+    width:100%;
+    height:100%;
+    margin:auto;
+    margin-top:-450px;
+    border:none;
+}
+
+/* .workContainer >div >image{
+
+} */
+
+/* ---------WORK FONT------------ */
+
+.workHeading{
+font-size: 96px;
+font-style: normal;
+margin-bottom: 0px;
+padding: 0px;
+color: purple;
+}
+
+.workDate{
+    font-size: 50px;
+    font-style: italic;
+    margin-top:-100px;
+    padding: 0px;
+    color: grey;
+}
+
+.workBody{
+    font-size: 50px;
+    font-style: normal;
+    color: grey;
+}
+
+/* ---------ABOUT FONT------------ */
+.about{
+    background: white;
+    font-size: 48px;
+    font-display: center;
+    text-align: left;
+    color: grey;
+}
+
+.aboutHeading{
+    font-size: 88px;
+    font-style: normal oblique;
+    font-display: center;
+    text-align: center;
+    color: darkgrey
+}
+
+.aboutCV{
+    font-size: 50px;
+    background: white;
+    font-style: bolder;
+    font-display: right;
+    text-align: right;
+    color: darkgray;  
+}
+
+.aboutSubheading{
+    font-size: 45;
+    font-style: bold;
+    font-display: left;
+    text-align: left;
+    color: purple;
+}
+
+.aboutBody{
+    font-size: 45px;
+    font-style: normal;
+    font-display: left;
+    text-align: left;
+    color: darkgray;
+}
+/* ---------CONTACT FORM------------ */
+
+    /* Add a background color and some padding around the form */
+    .formContainer {
+        width:4500px;
+        height:auto;
+
+        margin-left:3300px;
+        margin-right:0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        padding: 20px;
+
+        border-radius: 5px;
+        background-color: white;
+     
+      }
+
+          /* Add a background color and some padding around the form */
+.fformContainer {
+    width:1400px;
+    height:450px;
+    margin-top:-1000px;
+    margin-bottom:0px;
+    margin-left:3650px;
+    margin-right: 0px;;
+
+    padding: 20px;
+
+    border-radius: 5px;
+    background-color: white;
+  }
+
+.contactHeading{
+    font-size: 72px;
+    font-display: center;
+    font-style: bolder;
+    text-align: center;
+    color: purple;
+}
+
+
+.contactSubheading{
+    font-size: 65px;
+    font-style: bold;
+    font-display: center;
+    text-align: center;
+    color: grey;
+}
+
+.fcf-label{
+    font-size: 40px;
+    font-display: center;
+    text-align: center;
+    color: purple;   
+}
+
+  /* Style inputs with type="text", select elements and textareas*/
+input[type=text], select, textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size:50px;
+    width: 50%; /* Full width */
+    padding: 40px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 20px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+   /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    font-family: "Montserrat", sans-serif;
+    font-size:45px;
+    background-color: white;
+    color: darkgray;
+    padding: 25px 30px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid grey; /* Gray border */
+    cursor: pointer;
+  }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        color: lightgray;
+        border: 1px solid lightgray; /* Gray border */
+      }
+
+
+
+
+    
