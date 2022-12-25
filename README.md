@@ -1,4 +1,3 @@
-# draftportfolio.github.io
 Hellooo, 
 This is my final project submission for CFG's Web Development Bootcamp 🌟
 It's my artist portfolio in it's most humble of forms:
